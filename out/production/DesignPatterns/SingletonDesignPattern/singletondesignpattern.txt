@@ -1,0 +1,47 @@
+Singleton Design Pattern :-
+1. Create object once in entire application and use same object any no of times
+2. Didn't create new object snd only one object will be there in entire application
+
+Eg:- JDBC ( need to perform various operations in DB such as CRUD but will do DB connection only one time using singleton design pattern.
+
+Points to be remember:-
+1. Constructor should always be private
+2. Object return with the help of method(called factory method)
+3. Create field to store object is private
+
+Ways of creating singleton object:-
+1. Lazy Initialization
+2. Eager way
+
+Lazy Initialization:-
+
+1. Advantages:-
+- best if we are not concerned about thread
+
+2.Disadvantages:-
+- object will create when we call method before that it is not creating
+- it is not specific to threads
+- not perfect for thread safety(need to use some synchronize way)
+- not work in multithreading
+
+Eager Way:-
+
+1. Advantages:-
+
+2. Disadvantages:-
+- static initialization occurs first that's why when class loads object will create during loading of class irrespective of whether it is required to client or not
+- Not good for huge project in terms of usage
+- reduce performance because create objects during class loading irresptive of it is using or not.
+
+
+Ways to break singleton design pattern:-
+
+1. Reflection API to break singleton pattern
+Solution:- 1. If object exists then throw exception from inside constructor
+2. Use Enum
+
+2. Deserialization
+Solution:- implementing readResolve method
+
+3. Cloning
+Solution:- override clone method
