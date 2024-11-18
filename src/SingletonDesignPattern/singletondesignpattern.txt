@@ -31,7 +31,7 @@ Eager Way:-
 2. Disadvantages:-
 - static initialization occurs first that's why when class loads object will create during loading of class irrespective of whether it is required to client or not
 - Not good for huge project in terms of usage
-- reduce performance because create objects during class loading irresptive of it is using or not.
+- reduce performance because create objects during class loading irrespective of it is using or not.
 
 
 Ways to break singleton design pattern:-
