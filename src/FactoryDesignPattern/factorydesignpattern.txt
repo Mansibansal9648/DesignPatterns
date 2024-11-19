@@ -1,6 +1,7 @@
 Factory Design Pattern:-
-When there is a superclass and there are multiple subclasses and we want to get object of subclasses based on input
+- When there is a superclass and there are multiple subclasses and we want to get object of subclasses based on input
 and requirement then we create factory class which takes the responsibility of creating object of class based on input.
+- also called as factory method design pattern
 
 Advantages:-
 1. Focus on creating object for interface rather than implementation
